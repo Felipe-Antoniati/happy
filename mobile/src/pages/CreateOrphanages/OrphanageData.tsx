@@ -49,14 +49,14 @@ export default function OrphanageData() {
   }
 
   async function handleCreateOrphange() {
-    const {latitude, longitude} = params.position;
+    const {latitude, longitude} = params.position; 
     
     const data = new FormData();
     
     data.append("name", name);
     data.append("about", about);
-    data.append("instuctions", instructions);
-    data.append("latidude", String(latitude));
+    data.append("instructions", instructions);
+    data.append("latitude", String(latitude));
     data.append("longitude", String(longitude));
     data.append("opening_hours", opening_hours);
     data.append("open_on_weekends", String(open_on_weekends));
