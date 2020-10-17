@@ -9,7 +9,7 @@ import "leaflet/dist/leaflet.css";
 import "../styles/pages/orphanages-map.css";
 
 import mapIcon from "../utils/mapIcon";
-import api from "../services/api";
+import api from '../services/api';
 
 interface Orphanage {
   id: number;
@@ -36,7 +36,7 @@ const OrphanagesMaps = () => {
             <img src={mapMarkerImg} alt="Happy" />
           </Link>
           <h2>Choose an orphanage on the map</h2>
-          <p>Many children are waiting for your visit :)</p>
+          <p>Many children are waiting for your visit</p>
         </header>
 
         <footer>

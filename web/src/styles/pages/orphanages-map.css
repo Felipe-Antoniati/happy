@@ -23,7 +23,10 @@
   font-size: 39px;
   font-weight: 800;
   line-height:42px;
-  margin-top: 64px;
+}
+
+#page-map aside img {
+  margin-bottom: 3rem;
 }
 
 #page-map aside p 

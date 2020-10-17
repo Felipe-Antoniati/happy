@@ -4,7 +4,7 @@ import { Map, Marker, TileLayer } from "react-leaflet";
 import { useParams } from "react-router-dom";
 import mapIcon from "../utils/mapIcon";
 import Aside from "../components/Aside";
-import api from "../services/api";
+import api from '../services/api';
 
 import "../styles/pages/orphanage.css";
 
@@ -34,7 +34,6 @@ export default function Orphanage() {
   useEffect(() => {
     api.get(`orphanages/list-orphanages/${params.id}`).then((response) => {
       setOrphanage(response.data);
-      console.log(response.data);
     });
   }, [params.id]);
 
