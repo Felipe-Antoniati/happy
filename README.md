@@ -1,7 +1,7 @@
 # Happy
 
 <h4 align="center"> 
-	<img src="./client/web/src/images/logo.svg" style="width: 100%"/>
+	<img src="./client/web/src/images/logo.svg" style="width: 60rem"/>
 </h4>
 <br />
 <p align="center">
@@ -15,7 +15,7 @@
 
 ## About the Project
 
-**Happy** - Is an Application developed to bring happiness to children in orphanages, through the connection with people who want to help. This connection is made from the registration of social houses, then people can contact social houses. Both through the **Mobile App** and the **Web App**.
+**Happy** - Philanthropic App, developed to bring happiness to children in social houses, through the connection with people who want to help. This connection is made from the registration of social houses, then people can contact social houses. Both through the **Mobile App** and the **Web App**.
 
 <details>
   <summary>Click here for more informations</summary>
@@ -57,7 +57,7 @@
 ```bash
 
 # Clone this repository
-$ git clone https://github.com/Felipe-Antoniati/app-happy-nlw3.git
+$ git clone https://github.com/Felipe-Antoniati/happy-nlw3.git
 
 ```
 
@@ -66,7 +66,7 @@ $ git clone https://github.com/Felipe-Antoniati/app-happy-nlw3.git
 ```bash
 
 # Access the project's server folder through the terminal/powershell
-$ cd app-happy-nlw3/server
+$ cd happy-nlw3/server
 
 # Install dependencies
 $ yarn install
@@ -83,7 +83,7 @@ $ yarn dev
 ```bash
 
 # Access the project's server folder through the terminal/powershell
-$ cd app-happy-nlw3/client/web
+$ cd happy-nlw3/client/web
 
 # Install dependencies
 $ yarn install
@@ -102,7 +102,7 @@ To run the mobile project you need a cell phone with Expo installed
 or an android / ios emulator.
 
 # Access the project's server folder through the terminal/powershell
-$ cd app-happy-nlw3/client/mobile
+$ cd happy-nlw3/client/mobile
 
 # Install dependencies
 $ yarn install
