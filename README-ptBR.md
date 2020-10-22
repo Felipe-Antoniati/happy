@@ -59,7 +59,7 @@
 ```bash
 
 # Clone este repositório
-$ git clone https://github.com/Felipe-Antoniati/app-happy-nlw3.git
+$ git clone https://github.com/Felipe-Antoniati/happy-nlw3.git
 
 ```
 
@@ -68,7 +68,7 @@ $ git clone https://github.com/Felipe-Antoniati/app-happy-nlw3.git
 ```bash
 
 # Acesse a pasta server do projeto no terminal/powershell
-$ cd app-happy-nlw3/server
+$ cd happy-nlw3/server
 
 # Instale as dependências
 $ yarn install
@@ -85,7 +85,7 @@ $ yarn dev
 ```bash
 
 # Acesse a pasta Web do projeto no terminal/powershell
-$ cd app-happy-nlw3/client/web
+$ cd happy-nlw3/client/web
 
 # Instale as dependências
 $ yarn install
@@ -104,7 +104,7 @@ Para rodar o projeto mobile você precisa de um celular com o Expo instalado
 ou um emulador android/ios.
 
 # # Acesse a pasta Mobile do projeto no terminal/powershell
-$ cd app-happy-nlw3/client/mobile
+$ cd happy-nlw3/client/mobile
 
 # Instale as depedencias
 $ yarn install
