@@ -1,10 +1,10 @@
 import React from 'react';
 import { FiArrowLeft } from "react-icons/fi";
-import mapMarkerImg from '../assets/images/map-marker.svg';
+import mapMarkerImg from '../images/map-marker.svg';
 
 import { Link, useHistory } from 'react-router-dom';
 
-import '../styles/components/Aside.css';
+import '../styles/components/s_aside.css';
 
 const Aside = () => {
   const history = useHistory();

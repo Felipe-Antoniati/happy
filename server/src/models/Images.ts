@@ -1,16 +1,22 @@
-import { Entity, Column, PrimaryGeneratedColumn, ManyToOne, JoinColumn } from 'typeorm';
-import Orphanage from './Orphanage';
+import {
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  ManyToOne,
+  JoinColumn,
+} from "typeorm";
 
+import HomeSociety from "./HomeSociety";
 
-@Entity('images')
+@Entity("images")
 export default class Image {
-  @PrimaryGeneratedColumn('increment')
+  @PrimaryGeneratedColumn("increment")
   id: number;
-  
-  @Column()
-  path: string;  
 
-  @ManyToOne(() => Orphanage, orphanage => orphanage.images)
-  @JoinColumn({name: 'orphanage_id'})
-  orphanage: Orphanage;
+  @Column()
+  path: string;
+
+  @ManyToOne(() => HomeSociety, (home_society) => home_society.images)
+  @JoinColumn({ name: "home_society_id" })
+  home_society: HomeSociety;
 }

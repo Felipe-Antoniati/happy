@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { getRepository } from "typeorm";
-import Orphanage from "../models/Orphanage";
-import orphanageView from '../views/v_orphanages';
+import HomeSociety from "../models/HomeSociety";
+import HomeSocietyView from "../views/v_home_societies";
 
 // import Yup from 'yup';
 
@@ -9,21 +9,21 @@ export default {
   async create(req: Request, res: Response) {
     const {
       name,
-      latitude, 
+      latitude,
       longitude,
       about,
       instructions,
       opening_hours,
       open_on_weekends,
     } = req.body;
-    
+
     const requestImages = req.files as Express.Multer.File[];
-    const images = requestImages.map(image => {
-      return { path: image.filename }
+    const images = requestImages.map((image) => {
+      return { path: image.filename };
     });
 
-    const orphanagesRepository = getRepository(Orphanage);
-      
+    const homeSocietiesRepository = getRepository(HomeSociety);
+
     const data = {
       name,
       latitude,
@@ -31,8 +31,8 @@ export default {
       about,
       instructions,
       opening_hours,
-      open_on_weekends: open_on_weekends === 'true',
-      images
+      open_on_weekends: open_on_weekends === "true",
+      images,
     };
 
     // const schema = Yup.object().shape({
@@ -52,29 +52,29 @@ export default {
     //   abortEarly: false
     // });
 
-    const orphanage = orphanagesRepository.create(data);
-    
-    await orphanagesRepository.save(orphanage);
+    const homeSociety = homeSocietiesRepository.create(data);
+
+    await homeSocietiesRepository.save(homeSociety);
     return res.status(201).json({
-      message: "Created orphanage successfully",
-      orphanage: orphanage
+      message: "Created Home Society successfully",
+      homeSociety: homeSociety,
     });
   },
 
   async index(req: Request, res: Response) {
-    const orphanagesRepository = getRepository(Orphanage);
-    const orphanages = await orphanagesRepository.find({
-      relations: ['images']
+    const homeSocietiesRepository = getRepository(HomeSociety);
+    const homeSocieties = await homeSocietiesRepository.find({
+      relations: ["images"],
     });
-    return res.json(orphanageView.renderMany(orphanages));
+    return res.json(HomeSocietyView.renderMany(homeSocieties));
   },
 
   async show(req: Request, res: Response) {
     const { id } = req.params;
-    const orphanagesRepository = getRepository(Orphanage);
-    const orphanage = await orphanagesRepository.findOneOrFail(id, {
-      relations: ['images']
+    const homeSocietiesRepository = getRepository(HomeSociety);
+    const homeSociety = await homeSocietiesRepository.findOneOrFail(id, {
+      relations: ["images"],
     });
-    return res.json(orphanageView.render(orphanage));
+    return res.json(HomeSocietyView.render(homeSociety));
   },
 };

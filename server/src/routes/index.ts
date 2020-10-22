@@ -1,11 +1,9 @@
-import {Router} from 'express';
+import { Router } from "express";
 
-import OrphanageRoutes from './r_orphanages';
+import HomeSocietyRouters from "./r_home_societies";
 
 const routes = Router();
 
-routes
-  .use('/orphanages',  OrphanageRoutes)
-;
+routes.use("/home-societies", HomeSocietyRouters);
 
 export default routes;

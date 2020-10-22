@@ -10,9 +10,9 @@ import { FiPlus } from "react-icons/fi";
 
 import Aside from "../components/Aside";
 
-import "../styles/pages/create-orphanage.css";
+import "../styles/pages/s_create_home_society.css";
 
-export default function CreateOrphanage() {
+export default function CreateHomeSociety() {
   const history = useHistory();
 
   const [name, setName] = useState("");
@@ -47,11 +47,11 @@ export default function CreateOrphanage() {
     data.append("opening_hours", opening_hours);
     data.append("open_on_weekends", String(open_on_weekends));
 
-    images.forEach(image => {
+    images.forEach((image) => {
       data.append("images", image);
     });
 
-    await api.post("orphanages/create-orphanages", data);
+    await api.post("home-societies/create-home-society", data);
 
     alert("Register successfully");
 
@@ -59,14 +59,14 @@ export default function CreateOrphanage() {
   }
 
   function handleSelectImages(event: ChangeEvent<HTMLInputElement>) {
-    if(!event.target.files) {
+    if (!event.target.files) {
       return;
     }
 
-    const selectedImages = Array.from(event.target.files)
+    const selectedImages = Array.from(event.target.files);
     setImages(selectedImages);
 
-    const selectedImagesPreview = selectedImages.map(image => {
+    const selectedImagesPreview = selectedImages.map((image) => {
       return URL.createObjectURL(image);
     });
 
@@ -74,13 +74,13 @@ export default function CreateOrphanage() {
   }
 
   return (
-    <div id="page-create-orphanage">
+    <div id="page-create-home-society">
       <Aside />
 
       <main>
-        <form className="create-orphanage-form" onSubmit={handleSubmit}>
+        <form className="create-home-society-form" onSubmit={handleSubmit}>
           <fieldset>
-            <legend>Orphanage Data</legend>
+            <legend>Home Society Data</legend>
 
             <Map
               center={[44.0404315, -101.6743827]}
@@ -133,10 +133,8 @@ export default function CreateOrphanage() {
               </label>
 
               <div className="images-container">
-                { previewImages.map(image => {
-                  return (
-                    <img key={image} src={image} alt={name} />
-                  );
+                {previewImages.map((image) => {
+                  return <img key={image} src={image} alt={name} />;
                 })}
                 <label htmlFor="image[]" className="new-image">
                   <FiPlus size={24} color="#15b6d6" />
