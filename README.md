@@ -22,7 +22,7 @@
   <br />
   <section>
     <div>
-     This Project was developed during the <b>Next Level Week 1 (NLW)</b> an event offered by <a href="https://blog.rocketseat.com.br/">RocketSeat</a>. <b>NLW</b> is a free and intensive online course, with lots of code, challenges, networking and a single objective: to take you to the next level.
+     This Project was developed during the <b>Next Level Week 3 (NLW)</b> an event offered by <a href="https://blog.rocketseat.com.br/">RocketSeat</a>. <b>NLW</b> is a free and intensive online course, with lots of code, challenges, networking and a single objective: to take you to the next level.
     </div>
     <br />
     <div>
