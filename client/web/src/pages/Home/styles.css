@@ -1,0 +1,63 @@
+/* === MOBILE FIRST === */
+#home-page {
+  width: 100%;
+  height: 100%;
+  color: var(--ghost-white);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--dark-blue),
+    var(--normal-blue)
+  );
+}
+
+.content-home {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+
+  background-image: url("../../assets/bkg-landing.png");
+  background-repeat: no-repeat;
+  background-position: 16rem 19.3rem;
+  background-size: 14rem;
+}
+
+/* === HEADER === */
+.content-home header h2 {
+  font-size: 1.2rem;
+}
+
+/* === MAIN === */
+.content-home main h1 {
+  font-size: 2.23rem;
+}
+
+.content-home main p {
+  font-size: 1.8rem;
+  margin-top: 0.7rem;
+}
+
+/* === BUTTON === */
+.content-home a {
+  width: 10rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 3.4rem;
+  background-color: var(--normal-yellow);
+  color: var(--dark-soul);
+  margin-top: 1.8rem;
+}
+
+@media (max-width: 450px) {
+  .content-home {
+    background-size: 0rem;
+  }
+}
+
+/* === DESKTOP === */

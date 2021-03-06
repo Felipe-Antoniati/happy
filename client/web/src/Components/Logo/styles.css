@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 1rem;
+}
+
+.logo h1 {
+  font-size: 4rem;
+}
