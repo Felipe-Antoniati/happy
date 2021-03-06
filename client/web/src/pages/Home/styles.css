@@ -24,7 +24,7 @@
 
   background-image: url("../../assets/bkg-landing.png");
   background-repeat: no-repeat;
-  background-position: 15rem 25rem;
+  background-position: 11rem 28rem;
   background-size: 15rem;
   transition: 0.2s;
 }
@@ -58,12 +58,6 @@
   background-color: var(--normal-yellow);
   color: var(--dark-soul);
   margin-top: 2.6rem;
-}
-
-@media (max-width: 479px) {
-  .content-home {
-    background-size: 0rem;
-  }
 }
 
 /* === DESKTOP === */
