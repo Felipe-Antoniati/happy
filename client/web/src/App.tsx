@@ -1,10 +1,12 @@
-import React from "react";
-import Routes from "./routes";
+import "./global.css";
 
-import "./styles/globas.css";
-
-function App() {
-  return <Routes />;
+export default function App() {
+  return (
+    <div>
+      <h1>Hello World</h1>
+      <p>Restarting project<br/>
+        with my code structure
+      </p>
+    </div>
+  );
 }
-
-export default App;
