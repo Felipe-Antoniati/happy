@@ -97,8 +97,9 @@
   }
   
   .content-home main div a {
-    margin-left: 26rem;
-    width: 8rem;
+    margin-left: 28rem;
+    width: 7rem;
+    margin-top: 0.5rem;
   }
 
   .content-home main div a:hover {
