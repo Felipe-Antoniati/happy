@@ -1,7 +1,4 @@
 /* === MOBILE FIRST === */
-@media(max-width: 650px) {
-  
-}
 #home-page {
   width: 100%;
   height: 100%;
@@ -24,7 +21,7 @@
 
   background-image: url("../../assets/bkg-landing.png");
   background-repeat: no-repeat;
-  background-position: 11rem 28rem;
+  background-position: 9.9rem 28rem;
   background-size: 15rem;
   transition: 0.2s;
 }
@@ -39,7 +36,7 @@
 
 .content-home main h1 {
   font-size: 2.6rem;
-  color: #FFF;
+  color: #fff;
 }
 
 .content-home main div p {
@@ -61,10 +58,10 @@
 }
 
 /* === DESKTOP === */
-@media(min-width: 1023px) {
+@media (min-width: 1023px) {
   .content-home header {
     padding: 1.8rem 6rem;
-    justify-content: space-between; 
+    justify-content: space-between;
     flex-direction: row;
   }
 
@@ -89,7 +86,7 @@
     margin-top: 2rem;
     max-width: 35rem;
   }
-  
+
   .content-home main div a {
     margin-left: 28rem;
     width: 7rem;
@@ -106,5 +103,4 @@
     background-position: 45rem 2.6rem;
     background-size: 34rem;
   }
-
 }
