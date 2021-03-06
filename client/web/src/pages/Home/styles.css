@@ -24,27 +24,29 @@
 
   background-image: url("../../assets/bkg-landing.png");
   background-repeat: no-repeat;
-  background-position: 16rem 19.3rem;
-  background-size: 14rem;
+  background-position: 15rem 25rem;
+  background-size: 15rem;
   transition: 0.2s;
 }
 
-/* === HEADER === */
+.content-home header {
+  margin-bottom: 1rem;
+}
+
 .content-home header h2 {
   font-size: 1.2rem;
 }
 
-/* === MAIN === */
 .content-home main h1 {
-  font-size: 2.23rem;
+  font-size: 2.6rem;
+  color: #FFF;
 }
 
 .content-home main div p {
   font-size: 1.8rem;
-  margin-top: 0.7rem;
+  margin-top: 1rem;
 }
 
-/* === BUTTON === */
 .content-home a {
   width: 10rem;
   height: 3rem;
@@ -55,7 +57,7 @@
   border-radius: 3.4rem;
   background-color: var(--normal-yellow);
   color: var(--dark-soul);
-  margin-top: 1.8rem;
+  margin-top: 2.6rem;
 }
 
 @media (max-width: 479px) {
@@ -67,7 +69,7 @@
 /* === DESKTOP === */
 @media(min-width: 1023px) {
   .content-home header {
-    padding: 1.8rem;
+    padding: 1.8rem 6rem;
     justify-content: space-between; 
     flex-direction: row;
   }
@@ -83,18 +85,20 @@
   }
 
   .content-home main h1 {
-    font-size: 2.6rem;
-    max-width: 32rem;
+    font-size: 5rem;
+    line-height: 5rem;
+    max-width: 36rem;
   }
 
   .content-home main div p {
-    font-size: 2rem;
-    max-width: 30rem;
+    font-size: 2.6rem;
+    margin-top: 2rem;
+    max-width: 35rem;
   }
   
   .content-home main div a {
-    margin-left: 25rem;
-    width: 6.1rem;
+    margin-left: 26rem;
+    width: 8rem;
   }
 
   .content-home main div a:hover {
@@ -104,8 +108,8 @@
   }
 
   .content-home {
-    background-position: 47rem 2rem;
-    background-size: 30rem;
+    background-position: 45rem 2.6rem;
+    background-size: 34rem;
   }
 
 }
