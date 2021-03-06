@@ -1,4 +1,7 @@
 /* === MOBILE FIRST === */
+@media(max-width: 650px) {
+  
+}
 #home-page {
   width: 100%;
   height: 100%;
@@ -23,6 +26,7 @@
   background-repeat: no-repeat;
   background-position: 16rem 19.3rem;
   background-size: 14rem;
+  transition: 0.2s;
 }
 
 /* === HEADER === */
@@ -35,7 +39,7 @@
   font-size: 2.23rem;
 }
 
-.content-home main p {
+.content-home main div p {
   font-size: 1.8rem;
   margin-top: 0.7rem;
 }
@@ -54,10 +58,54 @@
   margin-top: 1.8rem;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 479px) {
   .content-home {
     background-size: 0rem;
   }
 }
 
 /* === DESKTOP === */
+@media(min-width: 1023px) {
+  .content-home header {
+    padding: 1.8rem;
+    justify-content: space-between; 
+    flex-direction: row;
+  }
+
+  .content-home header h2 {
+    font-size: 1.8rem;
+    max-width: 10rem;
+  }
+
+  .content-home main {
+    padding: 0.7rem 6rem;
+    align-items: flex-start;
+  }
+
+  .content-home main h1 {
+    font-size: 2.6rem;
+    max-width: 32rem;
+  }
+
+  .content-home main div p {
+    font-size: 2rem;
+    max-width: 30rem;
+  }
+  
+  .content-home main div a {
+    margin-left: 25rem;
+    width: 6.1rem;
+  }
+
+  .content-home main div a:hover {
+    color: var(--dark-blue);
+    border: 2px solid var(--dark-blue);
+    background: var(--light-blue);
+  }
+
+  .content-home {
+    background-position: 47rem 2rem;
+    background-size: 30rem;
+  }
+
+}
