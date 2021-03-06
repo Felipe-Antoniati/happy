@@ -17,7 +17,7 @@ export default function Home() {
         <main className="container">
           <h1>Ser feliz é levar felicidade para o mundo</h1>
           <div>
-            <p>Visite casas sociais e mude o dia de muitas crianças</p>
+            <p>Visite casas sociais e mude a vida de muitas crianças</p>
             <Link to="/home">
               <FiArrowRight size={30} />
             </Link>
