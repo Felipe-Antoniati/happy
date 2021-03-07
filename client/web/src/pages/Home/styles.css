@@ -63,6 +63,7 @@
     padding: 1.8rem 6rem;
     justify-content: space-between;
     flex-direction: row;
+    transition: 0.2s;
   }
 
   .content-home header h2 {

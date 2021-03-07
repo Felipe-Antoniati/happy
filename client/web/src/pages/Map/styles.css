@@ -17,13 +17,13 @@
 .map-content header {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 0.7rem;
   color: #FFF;
   justify-content: space-between;
   background-image: linear-gradient(
-    to bottom,
-    var(--dark-blue),
-    var(--normal-blue)
+    to bottom right,
+    var(--normal-blue),
+    var(--dark-blue)
   );
 }
 
@@ -32,11 +32,14 @@
 }
 
 .map-content header div {
-  width: 10rem;
   margin-right: 0.7rem
 }
 .map-content header h2 {
   font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .map-content header img {
@@ -45,13 +48,14 @@
 }
 
 .map-content header a {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   margin-right: 0.5rem;
   color: var(--ghost-white);
   transition: 0.2s;
 }
 
 .map-content header a:hover {
+  transform: scale(1.2);
   color: var(--light-blue);
 }
 
@@ -61,4 +65,98 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#map-page .add-hs {
+  width: 64px;
+  height: 64px;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--dark-blue);
+  color:  var(--ghost-white);
+  transition: backgrond-color 0.2s;
+}
+
+#map-page .add-hs:hover {
+  font-size: 2.2rem;
+  background-color: var(--light-blue);
+  color:  var(--dark-blue);
+  border: 2px solid var(--dark-blue)
+}
+
+
+#map-page .go-hs {
+  width: 44px;
+  height: 44px;
+  border-radius: 0.3rem;
+  font-size: 2rem;
+  font-weight: 700;
+
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--dark-blue);
+  color:  var(--ghost-white);
+  transition: backgrond-color 0.2s;
+}
+
+#map-page .go-hs:hover {
+  font-size: 2.2rem;
+  background-color: var(--light-blue);
+  color:  var(--dark-blue);
+  border: 2px solid var(--dark-blue)
+}
+
+#map-page .map-popup .leaflet-popup-content-wrapper {
+  background: var(--ghost-white);
+  border-radius: 1rem;
+  box-shadow: none;
+}
+
+#map-page .map-popup .leaflet-popup-content {
+  height: 7rem;
+  color: var(--dark--color);
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 8px 12px;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#map-page .map-popup .leaflet-popup-content-wrapper h1 {
+  font-size: 1.6rem;
+  color: var(--dark-blue);
+}
+
+@media(min-width: 768px) {
+  .map-content header h2 {
+    flex-direction: row;
+  }
+
+  .map-content header h2 i {
+   margin-left: 0.5rem;
+  }
+
+  .map-content header h1 {
+    font-size: 2.2rem;
+  }
 }
