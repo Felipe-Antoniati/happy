@@ -1,40 +1,50 @@
-import Logo from "../../Components/Logo";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import mapIcon from "../../utils/mapIcon";
+
+import Logo from "../../Components/Logo";
+import Modal from "../../Components/Modal";
 
 import {
   FiInfo,
   FiPlus,
   FiArrowRight,
-  FiGithub,
-  FiLinkedin
+  FiArrowLeftCircle,
 } from "react-icons/fi";
-
-import { 
-  MapContainer, 
-  TileLayer, 
-  Marker, 
-  Popup 
-} from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-import mapIcon from "../../utils/mapIcon";
 
 import "./styles.css";
 
 export default function Map() {
+  const [activeModal, setActiveModal] = useState("active");
+
+  function handleModal() {
+    if(activeModal === "") {
+      setActiveModal("active");
+    } else {
+      setActiveModal("");
+    }
+  }
+
   return (
     <div id="map-page">
       <div className="map-content">
         <header>
-        <div>
+          <div>
             <Link to="/">
-              <FiLinkedin />
+              <FiArrowLeftCircle 
+                size={40} 
+                className="icon"
+              />
             </Link>
-            <Link to="/map">
-              <FiGithub />
+            <Link to="/map" onClick={handleModal}>
+              <FiInfo 
+                size={40} 
+                className="icon"
+              />
             </Link>
-            <Link to="/map">
-              <FiInfo size={30}/>
-            </Link>            
           </div>
           <h2>
             <b>Bertioga,</b>
@@ -46,18 +56,13 @@ export default function Map() {
           <MapContainer
             center={[-23.8413458, -46.1422318]}
             zoom={15}
-            style={{ 
-              width: "100%", 
-              height: "100%" 
+            style={{
+              width: "100%",
+              height: "100%",
             }}
           >
-            <TileLayer 
-              url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" 
-            />
-            <Marker 
-              icon={mapIcon} 
-              position={[-23.8413458, -46.1422318]}
-            >
+            <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            <Marker icon={mapIcon} position={[-23.8413458, -46.1422318]}>
               <Popup
                 closeButton={false}
                 minWidth={240}
@@ -76,6 +81,10 @@ export default function Map() {
           </Link>
         </main>
       </div>
+      <Modal 
+        state={activeModal} 
+        click={handleModal} 
+      />
     </div>
   );
 }

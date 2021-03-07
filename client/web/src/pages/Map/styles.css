@@ -47,16 +47,15 @@
   margin-left: 2rem;
 }
 
-.map-content header a {
+.map-content header .icon {
   font-size: 1.8rem;
   margin-right: 0.5rem;
   color: var(--ghost-white);
   transition: 0.2s;
 }
 
-.map-content header a:hover {
-  transform: scale(1.2);
-  color: var(--light-blue);
+.map-content header .icon:hover {
+  transform: scale(1.1);
 }
 
 .map-content main {
@@ -77,7 +76,7 @@
   position: absolute;
   right: 40px;
   bottom: 40px;
-  z-index: 999;
+  z-index: 9998;
 
   display: flex;
   justify-content: center;
