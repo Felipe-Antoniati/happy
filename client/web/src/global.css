@@ -64,3 +64,27 @@ a {
   white-space: nowrap;
   border-width: 0;
 }
+
+.btn {
+  border-radius: 0.3rem;
+  font-size: 2rem;
+  font-weight: 700;
+
+  position: absolute;
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--dark-blue);
+  color:  var(--ghost-white);
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: var(--normal-blue);
+  color:  var(--ghost-white);
+  border: 2px solid var(--dark-blue);
+}

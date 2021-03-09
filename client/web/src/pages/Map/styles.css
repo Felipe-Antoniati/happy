@@ -67,60 +67,31 @@
 }
 
 #map-page .add-hs {
-  width: 64px;
-  height: 64px;
-  border-radius: 1rem;
-  font-size: 2rem;
-  font-weight: 700;
-
-  position: absolute;
-  right: 40px;
-  bottom: 40px;
-  z-index: 9998;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: var(--dark-blue);
-  color:  var(--ghost-white);
-  transition: backgrond-color 0.2s;
+  width: 4rem;
+  height: 4rem;
+  right: 4rem;
+  bottom: 3rem;
 }
-
-#map-page .add-hs:hover {
-  font-size: 2.2rem;
-  background-color: var(--light-blue);
-  color:  var(--dark-blue);
-  border: 2px solid var(--dark-blue)
-}
-
 
 #map-page .go-hs {
-  width: 44px;
-  height: 44px;
-  border-radius: 0.3rem;
-  font-size: 2rem;
-  font-weight: 700;
-
-  position: absolute;
-  right: 18px;
-  bottom: 18px;
-  z-index: 999;
-
   display: flex;
-  justify-content: center;
   align-items: center;
-
+  justify-content: space-evenly;
+  width: 90%;
+  height: 3rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
   background-color: var(--dark-blue);
-  color:  var(--ghost-white);
-  transition: backgrond-color 0.2s;
+  color: var(--ghost-white);
+  transition: 0.2s;
 }
 
 #map-page .go-hs:hover {
-  font-size: 2.2rem;
-  background-color: var(--light-blue);
-  color:  var(--dark-blue);
-  border: 2px solid var(--dark-blue)
+  transform: scale(1.1);
+  background-color: var(--normal-blue);
+  color:  var(--ghost-white);
+  border: 2px solid var(--dark-blue);
 }
 
 #map-page .map-popup .leaflet-popup-content-wrapper {
@@ -130,7 +101,7 @@
 }
 
 #map-page .map-popup .leaflet-popup-content {
-  height: 7rem;
+  height: 10rem;
   color: var(--dark--color);
   font-size: 1.6rem;
   font-weight: bold;
@@ -139,11 +110,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 #map-page .map-popup .leaflet-popup-content-wrapper h1 {
   font-size: 1.6rem;
-  color: var(--dark-blue);
+  opacity: 0.9;
+  margin-bottom: 1rem;
+  color: var(--dark-soul);
 }
 
 @media(min-width: 768px) {

@@ -26,7 +26,35 @@
 }
 
 .modal-content h2 {
+  font-size: 1.9rem;
+  font-weight: bold;
   margin-top: 0;
   margin-bottom: 0.7rem;
-  color: var(--light-blue);
+  color: var(--dark-blue);
+}
+
+.modal-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--dark-soul);
+  opacity: 0.8;
+}
+
+.ok-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.25rem 14rem;
+  width: 9rem;
+  height: 3rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  background-color: var(--normal-blue);
+  color: var(--ghost-white);
+  transition: 0.2s;
+}
+
+.ok-btn:hover {
+  transform: scale(1.1);
 }

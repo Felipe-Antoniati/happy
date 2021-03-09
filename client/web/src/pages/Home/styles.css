@@ -95,9 +95,10 @@
   }
 
   .content-home main div a:hover {
-    color: var(--dark-blue);
+    transform: scale(1.1);
+    color: var(--ghost-white);
     border: 2px solid var(--dark-blue);
-    background: var(--light-blue);
+    background: var(--normal-blue);
   }
 
   .content-home {

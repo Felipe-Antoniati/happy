@@ -71,12 +71,12 @@ export default function Map() {
               >
                 <h1>Instituto Casa Lar - Minas Gerais</h1>
                 <Link to="/map" className="go-hs">
-                  <FiArrowRight />
+                  Visitar <FiArrowRight size={30}/>
                 </Link>
               </Popup>
             </Marker>
           </MapContainer>
-          <Link to="/map" className="add-hs">
+          <Link to="/map" className="btn add-hs">
             <FiPlus />
           </Link>
         </main>
